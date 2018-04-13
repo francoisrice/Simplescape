@@ -10,17 +10,27 @@
 // Implement longrange attack 0.9.XX
 // Display Health UI and overworld stuff 1.0
 
-#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp> // Sprite, Texture, 
 #include <time.h>
+#include <stdlib.h> // rand()
 using namespace sf;
 
 int size = 56;
 
-Sprite f[32]; //figures
+Sprite f[32]; //figures; this may be unnecessary
 
-/* This is the chess board, populated by the pieces
-of each representative value.
-*/
+int mapNum = rand() % 1 + 1
+	
+class Map {
+	int board;
+public:
+	void choose_map(int); // spin random number generator from 1 to 8 (or as many maps as are created) to choose map
+	Map get_map(); // send the chosen map out to be used
+}
+
+void Map::choose_map (int mapNum) {
+	
+}
 
 //TODO - Randomly generate the board based on different
 // parameters. Randomly generate obstacles and randomly
