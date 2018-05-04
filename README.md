@@ -1,33 +1,20 @@
-# Fantasy Fighter
+# Simplescape
 
-A top-down, turn-based, role-playing, fighting game created for Ludem Dare 41!
+A top-down, RPG game built as a continuation of development from Fantasy Fighter
 
-This game requires SFML to compile and play. On Ubuntu and Linux Mint, you can
+The game is still in an unplayable state, but can be demoed by building from source.
+
+To do this, you will first need [SFML](https://www.sfml-dev.org/download/sfml/2.4.2/). On Ubuntu and Linux Mint, you can
 install SFML using,
 ```
 $ sudo apt install libsfml-dev
 ```
 You can then compile the code with the command
 ```
-$ g++ main.cpp -o application -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+$ g++ test2.cpp -o application -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ```
 Then running the application script will start the game.
 The game hasn't yet been tested when not compiled from source.
-
-# TODO
-1. Lock character motion to the center of each square [completed]
-	- Give ability to move both character and enemy [completed]
-	- Generate obstacles [completed]
-	- Add collision for obstacles 
-2. Have turns for character and enemy [completed]
-3. Add logic to enemy [completed]
-4. Add Combat actions to Character and Enemy [in progress]
-5. Tie Character and enemy to profiles [in progress]
-6. Add screen/portal to gain additional powers
-7. ...
-
-Note: Light attacks have been added but are untested. Other attacks are created, 
-	but not coded to pressed keys.
 
 # Combat Mechanics
 Two levels of space: Air and Ground
