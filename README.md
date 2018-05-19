@@ -1,6 +1,6 @@
 # Simplescape
 
-A top-down, RPG game built as a continuation of development from Fantasy Fighter
+A top-down, turn-based RPG game built as a continuation of development from Fantasy Fighter. THe fighter elements have been remove for the time being in favor of traditional randomized RPG combat.
 
 The game is still in an unplayable state, but can be demoed by building from source.
 
@@ -17,31 +17,11 @@ Then running the application script will start the game.
 The game hasn't yet been tested when not compiled from source.
 
 # Combat Mechanics
-Two levels of space: Air and Ground
-You can ground light, air light, ground heavy, air heavy, ground smash, or air smash
-air attacks hit jumping targets
-Ground attacks are the default
-Blocks block all heights of attack; but do not affect heavy attacks
-Speed of actions: 
-- Light - hits instantly, 40% damage
-- Heavy - 1 turn to charge, then hits on following turn, 100% damage
-- Smash - 2 turns to charge, then hits on following turn, negates jumping and moving, 200% damage
-- Jump - in the air that turn, and enemy's turn
-- Block - Starts that turn and continues for the next turn, negates jumping and moving
 
-Blocking a light attack or heavy attack cancels the attack
-Heavy attacks that are blocked cause the next turn to be spent stunned
-Smash attacks ignore blocking
+Each creature can move once and attack once on their turn, unless otherwise stated by a condition or ability. Each creature may move two squares per turn unless there is a special condition.
 
-Each turn the player or enemy can choose to jump, move, and attack
-These actions can happen in any order, therefore one could move to an 
-enemy, light action, and jump one turn, and the next turn light attack, and
-move away the next turn 
+Each attack gives a character experience based on the style of attack (whether it be Melee, Magic, or Range-based). Additionally, performing actions increase a characters ability to use that action (Climbing increases climbing skill, swimming increases swimming skill).
 
-Each character can move two squares per turn unless there is a special condition.
+Additionally, performing general actions, like lifting rocks, or speeching to a crowd, will increase passive skills, which will allow the ability to speak to larger or less friendly crowds, and lift bigger rocks.
 
-# Mechanics
-
--
--
--
+Experience (XP) gained for Melee, Magic, Range, Active, and Passive skills can be used to learn abilities within that skill category.
