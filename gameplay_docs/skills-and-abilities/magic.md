@@ -22,3 +22,21 @@ Note: Cooldown starts when the duration for a spell ends
 - Mental Link - 300XP - communicate with any person, across any distance, whose face you've seen or name you've heard; fails if the person doesn't want to connect - 50 turn cast time, 100 turn duration, 600 turn cooldown
 
 ## Solidification - Release your inner strength as a stable, near immovable force
+
+## Summoning - Bridge to locations together in space, to cross any distance
+
+## Other
+
+- Life Force: 1 XP for every 2 Life Augmentation XP, gain 1 Life Augmentation XP for every 2 Healing XP 
+- Fire: shares with Projection
+- Water: shares with Projection
+- Earth: shares with Projection, shares with Metal
+- Plant: shares with Life Alteration, shares with Earth
+- Wood: shares with Material Alteration, shares with Earth
+- Metal: shares with Earth, shares with Material Alteration
+- Force: shares with Projection
+- Sound: Share with Material Alteration
+- Magic Augmentation: shares with Scrying 
+- Perdiction - Use the energies of the world to perdict and influence the future: shares with Scrying
+- Lightning: shares with Fire, shares with Air, shares with Projection
+ 
