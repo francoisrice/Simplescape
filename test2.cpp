@@ -1,7 +1,12 @@
+// *Note: function is broken because an attack function needs to be created
+//		to replace the light attacks from FantasyFighter
+
 #include <SFML/Graphics.hpp> // All major graphics functions
 #include <time.h>
 #include <stdlib.h> //rand()
 #include <iostream> //cout (for debugging)
+#include <json/value.h> //import creatures as json files 
+#include "creatures/Creature.hpp"
 using namespace sf;
 
 ///////////////////   Elements for world generation     ///////////////////////////////////
@@ -20,6 +25,10 @@ int size = 75; // the pixel size of each square; in future make resizable for zo
 //CircleShape f[creature_num];
 
 CircleShape f[2]; //figures for character and enemy
+
+// Import Characters and Enemies
+
+
 RectangleShape obstacles[7]; // store obstacle rectangles and their position
 int board[10][10] = // generic 10x10 zone with 1 as obstacles
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -67,10 +76,10 @@ void startingPosition() {
 ////////////////////////      Elements for Combat Mechanics     //////////////////////////////////// 
 // in future, these values will be pulled from character header files
 
-class Creature() { // inherit graphical shape?
+class Creature { // inherit graphical shape?
 public:
 	float hp;
-	float maxHP; // standard max hp should be 20 hp, for the set damage
+	float maxHP = 20; // standard max hp should be 20 hp, for the set damage
 	bool stunned;
 	bool blocking;
 	bool inAir;
@@ -164,12 +173,12 @@ void getNextMove(Vector2f currLocat, Vector2f victim, Creature attacker, Creatur
 			// move in the y
 			s[2] = s[0];
 			int m = dy>0?1:-1;
-			s[3] = s[1]+n*2;
+			s[3] = s[1]+m*2;
 
 		} else if (dxdy>150) {
 			// move in the x
 			int m = dx>0?1:-1;
-			s[2] = s[0]+n*2;
+			s[2] = s[0]+m*2;
 			s[3] = s[1];
 
 		} else if (dxdy>-150 && dxdy<150) { // case of -150<abs(dx)-abs(dy)<150; dx =225, dy = 150

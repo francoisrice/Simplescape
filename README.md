@@ -11,7 +11,7 @@ $ sudo apt install libsfml-dev
 ```
 You can then compile the code with the command
 ```
-$ g++ test2.cpp -o application -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+$ g++ test2.cpp -o application -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -I /include/
 ```
 Then running the application script will start the game.
 The game hasn't yet been tested when not compiled from source.
@@ -25,3 +25,10 @@ Each attack gives a character experience based on the style of attack (whether i
 Additionally, performing general actions, like lifting rocks, or speeching to a crowd, will increase passive skills, which will allow the ability to speak to larger or less friendly crowds, and lift bigger rocks.
 
 Experience (XP) gained for Melee, Magic, Range, Active, and Passive skills can be used to learn abilities within that skill category.
+
+# Goals
+- Load creature/character from a file
+- Restrict motion based on player
+- Use creature stats for actions done
+- Add items and treasure to characters
+- Save experience and items to characters file 
