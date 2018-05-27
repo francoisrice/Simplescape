@@ -4,7 +4,7 @@ Creature::Creature() {
     float hp = 20;
     int hpXp = 0;
     float maxHp = 20; // standard max hp should be 20 hp, for the set damage
-
+    
     int lightMeleeXp=0;
     int mediumMeleeXp=0;
     int heavyMeleeXp=0;

@@ -3,8 +3,9 @@
 #include <string>
 
 class Unit : public Creature {
-public:
+    public:
     Unit();
+    ~Unit();
     // Save and load Units as a group? Yes. Here? Maybe not...
     // bool saveUnit();
     // Unit loadUnit(string,string);

@@ -27,8 +27,8 @@ Additionally, performing general actions, like lifting rocks, or speeching to a 
 Experience (XP) gained for Melee, Magic, Range, Active, and Passive skills can be used to learn abilities within that skill category.
 
 # Goals
-- Load creature/character from a file
+- Load creature/character from a file [X] - Abilities not implemented yet
 - Restrict motion based on player
 - Use creature stats for actions done
 - Add items and treasure to characters
-- Save experience and items to characters file 
+- Save experience and items to characters file [X]; equipment done, can't save inventory yet
