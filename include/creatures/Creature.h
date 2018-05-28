@@ -1,5 +1,5 @@
-#ifndef CREATURE_HPP
-#define CREATURE_HPP
+#ifndef CREATURE_H
+#define CREATURE_H
 
 
 class Creature //If importing inheritance class Creature : public ParentClass

@@ -1,4 +1,4 @@
- #include "Creature.hpp"
+ #include "Creature.h"
 
 Creature::Creature() {
     float hp = 20;

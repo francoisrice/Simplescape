@@ -1,11 +1,18 @@
-#ifndef UNIT_HPP
-#define UNIT_HPP
+#ifndef UNIT_H
+#define UNIT_H
 #include <string>
+#include <stdlib.h> //rand()
 
 class Unit : public Creature {
-    public:
+public:
     Unit();
     ~Unit();
+    Unit(bool);
+    std::string getName();
+    bool saveUnit();
+    Unit loadUnit(std::string);
+    int goldDrop(int);
+
     // Save and load Units as a group? Yes. Here? Maybe not...
     // bool saveUnit();
     // Unit loadUnit(string,string);

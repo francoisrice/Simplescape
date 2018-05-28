@@ -30,5 +30,5 @@ Experience (XP) gained for Melee, Magic, Range, Active, and Passive skills can b
 - Load creature/character from a file [X] - Abilities not implemented yet
 - Restrict motion based on player
 - Use creature stats for actions done
-- Add items and treasure to characters
+- Add items and treasure to characters [X]
 - Save experience and items to characters file [X]; equipment done, can't save inventory yet

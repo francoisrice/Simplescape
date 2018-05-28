@@ -1,5 +1,5 @@
-#include "Character.hpp"
-#include "Item.hpp"
+#include "Character.h"
+#include "Item.h"
 
 Character::Character() {
     std::string firstName = "";

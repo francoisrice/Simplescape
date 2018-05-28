@@ -1,7 +1,7 @@
-#include "Item.hpp"
+#include "Item.h"
 
 Item::Item() {
-    std:string name = "None";
+    std::string name = "None";
     std::string slot = "None";
     bool twoHand = 0;
     int atkBonus = 0;

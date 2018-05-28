@@ -1,6 +1,6 @@
-#ifndef CHARACTER_HPP
-#define CHARACTER_HPP
-#include "Creature.hpp"
+#ifndef CHARACTER_H
+#define CHARACTER_H
+#include "Creature.h"
 #include <string>
 #include <fstream>
 #include <iostream>

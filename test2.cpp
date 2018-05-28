@@ -5,8 +5,9 @@
 #include <time.h>
 #include <stdlib.h> //rand()
 #include <iostream> //cout (for debugging)
-#include <json/value.h> //import creatures as json files 
-#include "creatures/Creature.hpp"
+#include "include/creatures/Creature.hpp"
+#include "include/creatures/Character.hpp"
+#include "include/items/Item.hpp"
 using namespace sf;
 
 ///////////////////   Elements for world generation     ///////////////////////////////////
@@ -27,6 +28,11 @@ int size = 75; // the pixel size of each square; in future make resizable for zo
 CircleShape f[2]; //figures for character and enemy
 
 // Import Characters and Enemies
+
+	// hard-coded character and enemy for now, pull in as arguments later
+Character player1 = Character();
+Unit enemy1 = Unit();
+
 
 
 RectangleShape obstacles[7]; // store obstacle rectangles and their position
